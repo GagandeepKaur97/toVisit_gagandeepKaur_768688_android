@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.Marker;
@@ -31,6 +34,9 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
 
     DataBaseHelper dataBaseHelper;
 
+    FusedLocationProviderClient fusedLocationProviderClient;
+    LocationRequest locationRequest;
+    LocationCallback locationCallback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
