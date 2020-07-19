@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button addPlace;
     SwipeMenuListView locationListView;
+    DataBaseHelper dataBaseHelper;
+
 
 
 
