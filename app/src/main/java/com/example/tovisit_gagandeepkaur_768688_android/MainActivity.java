@@ -30,18 +30,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        addPlace = findViewById(R.id.btn_add_place);
 
+        addPlace = findViewById(R.id.btn_add_place);
+//ADD = findViewById(R.id.button);
         locationListView =  findViewById(R.id.location_list_view);
         dataBaseHelper = new DataBaseHelper(this);
 
         addPlace.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,LocationActivity.class);
-                startActivity(intent);
-            }
+          startActivity(intent);  }
         });
+//        addPlace.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this,LocationActivity.class);
+//                startActivity(intent);
+//            }
+//        });
         final LocationAdaptor locationAdaptor = new LocationAdaptor(this,R.layout.list_layout,Locations.savedLocations,dataBaseHelper);
         locationListView.setAdapter(locationAdaptor);
 
@@ -90,10 +97,6 @@ public class MainActivity extends AppCompatActivity {
                             LocationAdaptor locationAdaptor = new LocationAdaptor(MainActivity.this,R.layout.list_layout,Locations.savedLocations,dataBaseHelper);
                             locationListView.setAdapter(locationAdaptor);
                         }
-//                        Locations.savedLocations.remove(position);
-//                        LocationAdaptor locationAdaptor = new LocationAdaptor(MainActivity.this,R.layout.list_layout,Locations.savedLocations,dataBaseHelper);
-//                        locationListView.setAdapter(locationAdaptor);
-
 
                         break;
                     case 1:
