@@ -2,9 +2,74 @@ package com.example.tovisit_gagandeepkaur_768688_android;
 
 import android.os.AsyncTask;
 
-public class NearbyPlaceData extends AsyncTask<Object,String,String > {
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+
+public class NearbyPlaceData extends AsyncTask<Object,String,String > {String googlePlacesData;
+    GoogleMap mMap;
+    String url;
+    float bitmapDescriptorFactory;
+
+
     @Override
     protected String doInBackground(Object... objects) {
-        return null;
+        mMap = (GoogleMap) objects[0];
+        url = (String) objects[1];
+        bitmapDescriptorFactory = (Float) objects[2];
+
+        FetchURL fetchURL = new FetchURL();
+        try {
+            googlePlacesData = fetchURL.readUrl(url);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return googlePlacesData;
+    }
+
+    @Override
+    protected void onPostExecute(String s) {
+        List<HashMap<String, String>> nearbyPlaceList = null;
+        DataParser parser = new DataParser();
+        nearbyPlaceList = parser.parse(s);
+        showNearbyPlaces(nearbyPlaceList);
+    }
+
+    private void showNearbyPlaces(List<HashMap<String, String>> nearbyPlaces) {
+        for (int i=0; i<nearbyPlaces.size(); i++) {
+
+            HashMap<String, String> googlePlace = nearbyPlaces.get(i);
+
+            String placeName = googlePlace.get("place_name");
+            String vicinity = googlePlace.get("vicinity");
+            double lat = Double.parseDouble(googlePlace.get("lat"));
+            double lng = Double.parseDouble(googlePlace.get("lng"));
+            LatLng latLng = new LatLng(lat, lng);
+
+            // we create marker options
+            MarkerOptions markerOptions = new MarkerOptions()
+                    .position(latLng)
+                    .title(placeName + " : " + vicinity)
+                    .icon(BitmapDescriptorFactory.defaultMarker(bitmapDescriptorFactory));
+
+            mMap.addMarker(markerOptions);
+
+//            mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+//                @Override
+//                public boolean onMarkerClick(Marker marker) {
+//
+//                    return true;
+//                }
+//            });
+//            mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+//            mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
+
+        }
     }
 }
