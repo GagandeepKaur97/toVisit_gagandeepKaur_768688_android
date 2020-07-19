@@ -3,12 +3,34 @@ package com.example.tovisit_gagandeepkaur_768688_android;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.CheckBox;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.Marker;
 
 public class LocationActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleMap.OnMarkerDragListener {
+    private GoogleMap mMap;
+    private int REQUEST_CODE = 1;
+
+    private int position;
+    private String selectedadress;
+    private boolean alreadyAdded = false;
+
+    public final int RADIUS = 1500;
+    double latitude,longitude;
+    double destinationLatitude, destinationLongitude;
+
+    public static boolean requestedDirection,locationSelected;
+    public static String distance,duration;
+    private static int locationVisited = 0;
+
+    Button addFavourite;
+    CheckBox checkBoxVisited;
+
+    DataBaseHelper dataBaseHelper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +40,7 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
 
     @Override
     public void onMarkerDragStart(Marker marker) {
-        
+
     }
 
     @Override
