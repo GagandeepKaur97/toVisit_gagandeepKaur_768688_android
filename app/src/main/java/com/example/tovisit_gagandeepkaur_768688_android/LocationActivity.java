@@ -1,6 +1,7 @@
 package com.example.tovisit_gagandeepkaur_768688_android;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -80,6 +81,9 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
 
         addFavourite = findViewById(R.id.btn_add_favourite);
         checkBoxVisited = findViewById(R.id.checkbox_visited);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Add location");
 
 
         if (!checkPermission())

@@ -60,8 +60,8 @@ public class LocationAdaptor extends ArrayAdapter {
             if(locations1.isVisited() == 1){
                 System.out.println("-----------------------------------------------------");
                 System.out.println(locations1.isVisited());
-                adrss.setBackgroundColor(Color.CYAN);
-                v.setBackgroundColor(Color.CYAN);
+                adrss.setBackgroundColor(Color.LTGRAY);
+                v.setBackgroundColor(Color.LTGRAY);
             }
         }
 
@@ -70,8 +70,8 @@ public class LocationAdaptor extends ArrayAdapter {
             if(locations1.isVisited() == 1){
                 System.out.println("-----------------------------------------------------");
                 System.out.println(locations1.isVisited());
-                adrss.setBackgroundColor(Color.CYAN);
-                v.setBackgroundColor(Color.CYAN);
+                adrss.setBackgroundColor(Color.LTGRAY);
+                v.setBackgroundColor(Color.LTGRAY);
             }
         }
 

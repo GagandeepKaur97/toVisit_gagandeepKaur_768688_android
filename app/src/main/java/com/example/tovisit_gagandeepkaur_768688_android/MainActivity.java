@@ -1,5 +1,6 @@
 package com.example.tovisit_gagandeepkaur_768688_android;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Favourite Locations");
 
         addPlace = findViewById(R.id.btn_add_place);
 //ADD = findViewById(R.id.button);
