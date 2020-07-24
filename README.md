@@ -15,44 +15,44 @@
 
 <img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/source.png" alt="screen" width ="400" height="600"/>
 
-# adding source or destination by clicking on that particular location which user want to make a starting or ending point .
+## adding source or destination by clicking on that particular location which user want to make a starting or ending point .
 
 <img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/direction.png" alt="screen" width ="400" height="600"/>
 
-# when user added the source and destination on that time the user can check the direction .
+## when user added the source and destination on that time the user can check the direction .
 
 <img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/distance.png" alt="screen" width ="400" height="600"/>
 
-# distance = the user can see the distance which is displayed at the bottom.
+## distance = the user can see the distance which is displayed at the bottom.
 
 <img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/updated.png" alt="screen" width ="400" height="600"/>
 
-# updated = when the user check the box by clicking on the particular location then the colour of that particular location changed.
+## updated = when the user check the box by clicking on the particular location then the colour of that particular location changed.
 
 <img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/showing%20for%20cafe.png" alt="screen" width ="400" height="600"/>
 
-# cafe = when the user click on the three dots which is at top then options will be displayed in which user can see the nearby places to visit.
+## cafe = when the user click on the three dots which is at top then options will be displayed in which user can see the nearby places to visit.
 
 <img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/save%20location.png" alt="screen" width ="400" height="600"/>
 
-# save 
+## save 
 
 <img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/images/Screenshot_1595206863.png" alt="screen" width ="400" height="600"/>
-# all location will be shown of different nearby places which is different colours.
+## all location will be shown of different nearby places which is different colours.
 
 <img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/visitedd.png" alt="screen" width ="400" height="600"/>
 
-# visited
+## visited
 
 <img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/terrain.png" alt="screen" width ="400" height="600"/>
 
-# terrain= the user can change the view as well of the maps.
+## terrain = the user can change the view as well of the maps.
 
 
 <img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/menucafe.png" alt="screen" width ="400" height="600"/>
 
-# menu this is the menu which displays the places and maps.
+## menu this is the menu which displays the places and maps.
 
-<img src ="https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/Screenshot_1595550276.png"alt="screen" width ="400" height="600"/>
+<img src ="https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/Screenshot_1595550276.png" alt="screen" width ="400" height="600"/>
 
-# when user enter it will display the alert with three options.
+## when user enter it will display the alert with three options.
