@@ -1,6 +1,11 @@
 # toVisit_gagandeepKaur_768688_android
 
+<img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/Screenshot_1595551647.png"alt="firstscreen" width ="400" height="600"/>
+
+# this is the first screen of the app. when the user click on the add button the user can save the location whatever the user want , when the user save the location it will display on the first screen . 
+
 <img src = "https://github.com/GagandeepKaur97/toVisit_gagandeepKaur_768688_android/blob/master/pictures/firstscreen.png" alt="firstscreen" width ="400" height="600"/>
+
 ## this is the first screen 
 
 ##
